@@ -12,6 +12,6 @@ The order in which the scripts should be run are
 4) compile_patientsamples.py - Extract patient image samples, age, and idh status and compile them into numpy files.
 5) predict.py - Predict IDH status using modality network models, combining outputs with age in a logistic regression
 
-Step 1) is a MATLAB script while the others are python scripts. Step 5) is written in Keras (2) with TensorFlow backend. 
+Step 1) is a MATLAB script while the others are python scripts. Step 5) is written in Keras 2 with TensorFlow backend. 
 The trained models can be downloaded here:
 https://www.dropbox.com/sh/enfdwh8qh8x5yro/AADtOMbUqfmUtEGA9SDBwGeja?dl=0
