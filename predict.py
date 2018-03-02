@@ -54,10 +54,10 @@ def get_auc(y_true,y_pred):
     confidence_upper = sorted_scores[int(0.95 * len(sorted_scores))]
     return roc_auc_score(y_true, y_pred), confidence_lower, confidence_upper
 
-full_pred_FLAIR = model_FLAIR.predict(slices_FLAIR,batch_size=16)
-full_pred_T2 = model_T2.predict(slices_T2,batch_size=16)
-full_pred_T1 = model_T1.predict(slices_T1,batch_size=16)
-full_pred_T1post = model_T1post.predict(slices_T1post,batch_size=16)
+full_pred_FLAIR = model_FLAIR.predict_proba(slices_FLAIR,batch_size=16)
+full_pred_T2 = model_T2.predict_proba(slices_T2,batch_size=16)
+full_pred_T1 = model_T1.predict_proba(slices_T1,batch_size=16)
+full_pred_T1post = model_T1post.predict_proba(slices_T1post,batch_size=16)
 all_age = age_Test
 all_age = np.expand_dims(all_age,1)
 full_pred = np.hstack((full_pred_FLAIR,full_pred_T2,full_pred_T1,full_pred_T1post,all_age))
