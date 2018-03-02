@@ -17,7 +17,7 @@ The trained models can be downloaded here:
 https://www.dropbox.com/sh/enfdwh8qh8x5yro/AADtOMbUqfmUtEGA9SDBwGeja?dl=0
 
 dependancy versions:
-Keras 2.1.3
+keras 2.1.3
 tensorflow 1.2.0
 scikit-learn 0.14.1
 joblib 0.7.1
