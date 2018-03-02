@@ -157,7 +157,8 @@ for p in range(len(patients)):
     slices_T1post[3*p+1] = np.stack((T1post_x3, T1post_y1, T1post_z2), axis=2)
     slices_T1post[3*p+2] = np.stack((T1post_x2, T1post_y3, T1post_z1), axis=2)    
     labels[3*p:3*p+3] = curr_idh
-    
+    age[3*p:3*p+3] = curr_age
+
     del FLAIR, T2, T1, T1post, FLAIRmask, curr_idh
 
 #specify save directory
